@@ -8,7 +8,7 @@ exports.createUser = async (req, res) => {
       console.log("not all fields...");
       return res.status(400).json({
         status: 400,
-        message: "Please fill all fields",
+        message: "Please enter all fields",
       });
     }
     const user = await User.create({
